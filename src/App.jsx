@@ -25,23 +25,23 @@ function App() {
     };
   }, []);
   return (
-    <main className="bg-[#21092fff] h-screen flex items-center ">
-      <div className=" w-9/12 mx-auto h-full ">
+    <main className=" h-screen flex items-center justify-center bg-[#21092f66]">
+      <div className="w-11/12 mx-auto">
         <section
-          className="h-1/3 bg-cover bg-center bg-no-repeat"
+          className="h-[25vh] sm:h-[32vh] bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${background})` }}
         >
           <div className="relative h-full">
-            <div className="absolute left-[31%] top-[20%] w-4/6">
+            <div className="absolute  top-[20%] right-[5%]  w-4/6 sm:w-3/6">
               <img src={cardBack} alt="" />
             </div>
-            <div className="absolute top-[60%] w-4/6">
+            <div className="absolute top-[58%] left-[5%] w-4/6 sm:w-3/6">
               <img src={cardFront} alt="" />
             </div>
           </div>
         </section>
-        <form className="pt-20 bg-white px-4 ">
-          <div className="flex flex-col mb-2.5">
+        <form className="pt-20 [541px]:pt-40 bg-white px-4 ">
+          <div className="flex flex-col mb-3">
             <label
               htmlFor="cardName"
               className="mb-1 font-black text-[#21092fff]"
@@ -56,7 +56,7 @@ function App() {
               className="p-2 border border-gray-300 rounded-xl"
             />
           </div>
-          <div className="flex flex-col mb-2.5">
+          <div className="flex flex-col mb-3">
             <label
               htmlFor="cardNumber"
               className="mb-1 font-black text-[#21092fff]"
@@ -87,14 +87,14 @@ function App() {
                   id="expMonth"
                   placeholder="MM"
                   maxLength="2"
-                  className=" border border-gray-300 rounded-xl px-2 py-1.5 mr-2 w-2/6"
+                  className=" border border-gray-300 rounded-xl px-2 py-2 mr-2 w-2/6"
                 />
                 <input
                   type="text"
                   id="expYear"
                   placeholder="YY"
                   maxLength="2"
-                  className=" border border-gray-300 rounded-xl px-2 py-1.5 mr-2 w-2/6"
+                  className=" border border-gray-300 rounded-xl px-2 py-2 mr-2 w-2/6"
                 />
               </div>
             </div>
@@ -107,13 +107,13 @@ function App() {
                 id="cvc"
                 placeholder="e.g. 123"
                 maxLength="3"
-                className="border border-gray-300 rounded-xl px-2 py-1.5 mr-2 w-6/6"
+                className="border border-gray-300 rounded-xl px-2 py-2 mr-2 w-6/6"
               />
             </div>
           </div>
           <button
             type="submit"
-            className="bg-[#21092fff] text-white w-full rounded-xl my-3 p-3.5 "
+            className="bg-[#21092fff] text-white w-full rounded-xl mt-8 mb-10 p-3.5 "
           >
             Confirm
           </button>
